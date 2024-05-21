@@ -1,0 +1,79 @@
+#for windows 11. path :  C:\Users\youname\AppData\Local\lf
+#sort by create date desc default.
+#add file: af, add directory: ad
+# open explorer with upper E character.
+# D to show document.
+
+
+
+# interpreter for shell commands
+set shell powershell
+#set shell cmd
+
+# Shell commands with multiline definitions and/or positional arguments and/or
+# quotes do not work in Windows. For anything but the simplest shell commands,
+# it is recommended to create separate script files and simply call them here
+# in commands or mappings.
+#
+# Also, the default keybindings are defined using cmd syntax (i.e. '%EDITOR%')
+# which does not work with powershell. Therefore, you need to override these
+# keybindings with explicit choices accordingly.
+
+# change the default open command to work in powerShell
+cmd open &start $Env:f
+
+# change the editor used in default editor keybinding
+# There is no builtin terminal editor installed in Windows. The default editor
+# mapping uses 'notepad' which launches in a separate GUI window. You may
+# instead install a terminal editor of your choice and replace the default
+# editor keybinding accordingly.
+#map e $nvim $Env:f
+map e $gvim $Env:f
+
+# change the pager used in default pager keybinding
+# The standard pager used in Windows is 'more' which is not a very capable
+# pager. You may instead install a pager of your choice and replace the default
+# pager keybinding accordingly.
+#map i $less $Env:f
+
+# change the shell used in default shell keybinding
+map w $powershell
+
+# change 'doc' command to use a different pager
+cmd doc $lf -doc | more
+# ~/.config/lf/lfrc
+
+# Auto-execution section to run the sort command on startup
+set sortby ctime ;set reverse true
+
+# leave some space at the top and the bottom of the screen
+set scrolloff 10
+
+# use enter for shell commands
+map <enter> shell
+#view document
+map D doc
+
+#change directory
+map gpy cd d:\\workdir\\dev\\python
+map gre cd d:\\workdir\\report
+map gdev cd d:\\workdir\\dev
+map gdra cd d:\\workdir\\draft
+map gco cd d:\\workdir\\common
+map gW cd d:\\workdir
+map gso cd d:\\software
+map gop cd d:\\opensource
+map gcf cd c:\\users\\yuefu\\appdata\\local\\lf
+map gh cd d:\\李曰福的文档
+map gD cd c:\\users\\yuefu\\downloads
+map gt cd d:\\tmp
+
+
+#others
+#open explorer in current directory
+map E $explorer .
+
+# use ad to create directories
+map ad push $mkdir<space>""<left>
+# use af to create new file
+map af $powershell -Command "D:\\workdir\\dev\\批处理文件\\create_file.ps1"
