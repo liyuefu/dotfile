@@ -1,5 +1,3 @@
-#lfrc with find function. open html in firefox and now error show up. 
-
 set previewer ~/.config/lf/previewer
 
 # Basic Settings
@@ -108,7 +106,7 @@ map f ${{
 
 # Bindings
 map c
-map d
+#map d
 #map m
 
 # map co $vscodium "$f"
@@ -134,7 +132,7 @@ map ad mkdir
 #map C clear
 map D delete
 map T tarcurrent
-map e extract
+map E extract
 # Movement
 map gpy cd /home/nome/winworkdriver/workdir/dev/python
 map gre cd /home/nome/winworkdriver/workdir/report
