@@ -122,7 +122,7 @@ map . set hidden!
 #map dr $trashy restore
 #map de $trashy empty --all
 map p paste
-map x cut
+#map x cut
 map y copy
 map <enter> open
 map R reload
@@ -132,7 +132,7 @@ map ad mkdir
 #map C clear
 map D delete
 map T tarcurrent
-map E extract
+map X extract
 # Movement
 map gpy cd /home/nome/winworkdriver/workdir/dev/python
 map gre cd /home/nome/winworkdriver/workdir/report
