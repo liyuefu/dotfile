@@ -1,5 +1,5 @@
 set previewer ~/.config/lf/previewer
-
+#add extract, zip file
 # Basic Settings
 set hidden true
 set ignorecase true
