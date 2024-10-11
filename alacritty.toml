@@ -1,11 +1,13 @@
 live_config_reload = true
-
+#this theme is from yay install archlinux.
 import = [
 #  "/usr/lib/node_modules/alacritty-themes/themes/Tokyonight_Night.toml"
 # "/usr/lib/node_modules/alacritty-themes/themes/Dracula.toml"
    "/usr/lib/node_modules/alacritty-themes/themes/Snazzy.toml"
  #  "/usr/lib/node_modules/alacritty-themes/themes/Tokyonight_Storm.toml"
 ]
+
+#this theme is from alacritty-themes.
 # import = [
 # #    "~/.config/alacritty/themes/themes/aura.toml"
 #     "~/.config/alacritty/themes/themes/hyper.toml"
