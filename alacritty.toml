@@ -1,5 +1,19 @@
 live_config_reload = true
 
+import = [
+#  "/usr/lib/node_modules/alacritty-themes/themes/Tokyonight_Night.toml"
+# "/usr/lib/node_modules/alacritty-themes/themes/Dracula.toml"
+   "/usr/lib/node_modules/alacritty-themes/themes/Snazzy.toml"
+ #  "/usr/lib/node_modules/alacritty-themes/themes/Tokyonight_Storm.toml"
+]
+# import = [
+# #    "~/.config/alacritty/themes/themes/aura.toml"
+#     "~/.config/alacritty/themes/themes/hyper.toml"
+# #    "~/.config/alacritty/themes/themes/tokyo-night.toml"
+# ]
+#Google.dark.toml
+
+
 [bell]
 animation = "EaseOutExpo"
 duration = 0
